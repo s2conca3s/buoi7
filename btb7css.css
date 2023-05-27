@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    width: 100%;
+    background: #484848;
+    border-radius: 5px;
+}
+div ul{
+    display: flex;
+}
+div> ul li{
+    list-style: none;
+    border-right: 1px solid #ccc;
+    border-left:1px solid #333;
+}
+div> ul li a{
+    display: block;
+    padding: 0 25px;
+    line-height: 50px;
+    color: #f1f2f3;
+    text-decoration: none;
+}
+div ul li:first-child {
+    border-left: none;
+}
+div> ul li:first-child a{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+div ul li:hover>a{
+    background: red;
+    opacity: .7;
+    color: yellow;
+}
+div li ul{
+    display: none;
+    min-width: 350px;
+    position: absolute;
+}
+div li>ul li{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: #999;
+    text-align: left;
+}
+div li>ul li:first-child a{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+div li>ul li:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+div li>ul li:last-child a{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+div  li:hover > ul{
+    display:  block;
+}
+div > ul li > ul li >ul{
+    margin-left: 352px;
+    margin-top: -50px;
+}
